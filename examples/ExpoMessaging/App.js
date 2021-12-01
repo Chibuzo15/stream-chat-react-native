@@ -40,6 +40,8 @@ const options = {
   watch: true,
 };
 
+console.log('chat client ', chatClient)
+
 /**
  * Start playing with streami18n instance here:
  * Please refer to description of this PR for details: https://github.com/GetStream/stream-chat-react-native/pull/150
@@ -197,8 +199,11 @@ const App = () => {
 export default () => {
   const theme = useStreamChatTheme();
   return (
-    <SafeAreaProvider style={{ backgroundColor: theme.colors?.white_snow || '#FCFCFC' }}>
-      <App />
-    </SafeAreaProvider>
+    // <SafeAreaProvider style={{ backgroundColor: theme.colors?.white_snow || '#FCFCFC' }}>
+
+      <View>
+        <Text>sadasdsa</Text>
+      </View>
+    //</SafeAreaProvider>
   );
 };
